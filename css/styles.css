@@ -26,9 +26,6 @@ svg {
     display: block;
 }
 
-a{
-    transition:color:var(--rare-color) 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .header{
     border-bottom: 1px solid #ececec;
 }
@@ -77,6 +74,7 @@ a{
     color:var(--main-text-color);
     padding-top: 32px;
     padding-bottom: 32px;
+    transition: color:var(--rare-color) 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover {
@@ -130,13 +128,13 @@ a{
     font-weight: 500;
     line-height: calc(16 / 14);
     align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link .icon{
     margin-right: 10px;
     fill: currentColor;
     box-sizing: border-box;
     height: auto;
-
 }
 
 /* .contact-link:hover {
@@ -147,8 +145,8 @@ a{
 .contact-link:hover,
 .contact-link:focus {
     color: var(--rare-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .banner {
@@ -198,7 +196,8 @@ a{
     border-radius: 4px;
     margin: 0 auto;
     display: block;
-    border-color: transparent; 
+    border-color: transparent;
+    transition-property: background-color; 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -206,7 +205,7 @@ a{
 
 .banner-button:hover,
 .banner-button:focus{
-    background-color:#188ce8;
+    background-color: #188ce8;
     /* transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
@@ -243,6 +242,7 @@ a{
 }
 
 .about-title{
+    font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
     text-transform: uppercase;
@@ -396,13 +396,13 @@ a{
     color: rgba(255, 255, 255, 0.6);
     margin: 0;
     padding: 0;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contact:hover,
 .footer-contact:focus {
     color: var(--rare-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter{
@@ -431,13 +431,11 @@ a{
     background-color: #f5f4fa;
     transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .project-button {
-    background-color: #dedede;
+
 }
 
 .project-button:hover,
@@ -560,6 +558,7 @@ a{
     fill: var(--icon-color);
     background-color: var(--background-main);
     color: var(--background-main);
+    transition-property: fill, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -597,6 +596,7 @@ a{
     fill: var(--icon-color);
     border: 1px solid var(--icon-color);
     border-radius: 4px;
+    transition-property: fill, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -649,6 +649,7 @@ a{
     fill: var(--background-main);
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--background-main);
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -656,7 +657,6 @@ a{
 .footer-social-networks:hover,
 .footer-social-networks:focus {
     background-color: var(--rare-color);
-    fill:var(--background-main);
     transform: translateY(3px);
 }
 /* 
